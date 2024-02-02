@@ -1,0 +1,163 @@
+.outer {
+  @apply w-full h-full flex relative;
+}
+.menu {
+  @apply w-60 h-full flex flex-col bg-[white] px-0 py-8;
+}
+.right {
+  @apply flex flex-col flex-1 bg-[#FAFAFB] h-full w-full px-6 py-0;
+}
+.right_icons{
+  @apply flex flex-row flex-1 justify-end gap-6;
+}
+.menu_options {
+  @apply w-full h-16 flex items-center cursor-pointer;
+  /* border: 2px solid green; */
+}
+.menu_option{
+  @apply ml-[1.9rem] w-7 h-7;
+}
+.menu_option_selected{
+  background: linear-gradient(90deg, #ACA9FF 0%, rgba(172, 169, 255, 0.00) 91.25%);
+  @apply pl-[1.9rem] w-14 h-12 ;
+}
+.menu_title{
+  @apply ml-[0.7rem] text-[#9A9AA9] text-lg font-medium;
+  font-family: Nunito;
+}
+.menu_title_selected{
+  @apply ml-[0.7rem] text-xl font-medium -mt-3;
+  font-family: Nunito;
+}
+.right_header {
+  @apply w-full h-24 justify-between flex items-center;
+}
+.right_content {
+  @apply w-full flex-1 flex justify-center flex-col items-center;
+}
+.span_title {
+  @apply hidden;
+}
+.upload {
+  @apply flex flex-col bg-[white] max-w-lg w-[90%] h-fit mt-8 mb-12 p-4 rounded-[10px];
+}
+.upload_inner {
+  @apply flex border w-full h-60 justify-center items-center flex-col cursor-pointer mb-4 rounded-[10px] border-dashed border-[gray];
+}
+.upload button {
+  @apply flex justify-center items-center h-10 bg-[color:var(--primary)] cursor-pointer rounded-[10px] border-[none];
+}
+.excel_table {
+  @apply flex w-[70rem] h-full justify-center flex-col bg-neutral-100 text-[0.8rem] ml-12 mb-8 px-0 py-2 rounded-[10px];
+  /* border: 2px solid red; */
+}
+.table_title {
+  @apply ml-12;
+}
+.table_row_head {
+  @apply h-4 flex mx-4 my-2 rounded-[10px];
+}
+.table_row_head div {
+  @apply font-[bold] px-4 py-0;
+}
+.table_row div {
+  @apply px-4 py-0;
+}
+.table_row_head div:nth-child(1) {
+  @apply flex-1;
+}
+.table_row_head div:nth-child(2) {
+  @apply flex-[2];
+}
+.table_row_head div:nth-child(3) {
+  @apply flex-[2];
+}
+.table_row_head div:nth-child(4) {
+  @apply flex-[3];
+}
+.table_row_head div:nth-child(5) {
+  @apply flex-[4];
+}
+.table_row div:nth-child(1) {
+  @apply flex-1;
+}
+.table_row div:nth-child(2) {
+  @apply flex-[2];
+  /* color: #5B93FF; */
+}
+.table_row div:nth-child(3) {
+  @apply flex-[2];
+}
+.table_row div:nth-child(4) {
+  @apply flex-[3];
+}
+.table_row div:nth-child(5) {
+  @apply flex-[4];
+  /* display: flex; */
+}
+.table_row {
+  @apply min-h-[3rem] bg-[white] flex items-center mx-4 my-2 rounded-[10px];
+}
+.select {
+  @apply w-4/5 text-[0.8rem] h-full px-[0.8rem] py-[0.1rem] rounded-[5px];
+}
+.tag {
+  @apply flex justify-center items-center bg-[#605BFF] w-fit max-w-[8rem] h-8 text-[white] cursor-pointer m-2 rounded-[10px];
+}
+.title_logo {
+  @apply hidden;
+}
+.toggle {
+  @apply hidden;
+}
+.span_main_title {
+  justify-self: left;
+}
+.combined_toggle {
+  @apply hidden;
+}
+.close2 {
+  @apply hidden;
+}
+@media screen and (max-width: 900px) {
+  .close2 {
+    @apply flex;
+  }
+  .menu {
+    @apply hidden;
+  }
+  .menu_toggle {
+    @apply fixed w-9/12 bg-[white] h-screen shadow-[rgba(0,0,0,0.15)_2.4px_2.4px_3.2px] pt-8 rounded-[0_10px_10px_0];
+    /* display: none; */
+  }
+  .span_title {
+    @apply flex ml-8 mt-8;
+  }
+  .right_content {
+    @apply justify-start;
+  }
+  .span_main_title {
+    @apply hidden;
+  }
+  .title_logo {
+    @apply flex;
+  }
+  .right_header {
+    @apply bg-[white] px-6 py-0;
+  }
+  .right {
+    @apply p-0;
+  }
+  .toggle {
+    @apply flex flex-col;
+  }
+  .combined_toggle {
+    @apply flex;
+  }
+  .table_title {
+    @apply ml-4;
+  }
+  .excel_table {
+    @apply ml-4;
+  }
+}
